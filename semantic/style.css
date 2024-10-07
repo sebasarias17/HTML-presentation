@@ -1,0 +1,150 @@
+body {
+    background-color: #ffffff;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas: 
+        "header header header"
+        "nav nav nav"
+        "aside main main"
+        "footer footer footer";
+    height: 100vh;
+}
+
+/* HEADER */
+.header {
+    grid-area: header;
+    text-align: center;
+    padding: 20px;
+}
+
+.header:hover {
+    background-color: #ff0c55b4;
+    border-radius: 25px;
+    transition: 1s;
+}
+
+/* NAV */
+.nav {
+    grid-area: nav;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #000;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.nav:hover{
+    background-color: #37ff00;
+    transition: 1s;
+}
+
+/* MAIN */
+.main {
+    grid-area: main;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.main:hover{
+    background-color: #009dff;
+    transition: 1s;
+}
+
+/* ARTICLE */
+.article {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.article h2, .article p, .article figcaption {
+    margin: 10px 0;
+}
+
+.article:hover{
+    background-color: #0059ff;
+    transition: 1s;
+}
+
+.article:hover p{
+    background-color: #aeff00;
+    padding: 10px;
+    border-radius: 25px;
+    transition: 1s;
+}
+
+/* ASIDE */
+.aside {
+    grid-area: aside;
+    align-items: center;
+    padding: 5px; 
+    border-radius: 10px;
+    text-align: center
+}
+
+.aside a{
+    font-size: larger;
+    text-decoration: none;
+    color: #000000;
+}
+
+.aside li{
+    list-style-type: none;
+}
+
+.aside:hover {
+    background-color: #ff0c55b4;
+    padding: 2px;
+    border-radius: 25px;
+    margin: 10px 10px 10px 10px;
+    transition: 1s;
+}
+
+/* SECTION */
+.section {
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.section:hover {
+    background-color: #0062ff;
+    transition: 1s;
+}
+
+/* FOOTER */
+.footer {
+    grid-area: footer;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.footer:hover{
+    background-color:#d900ff;
+    transition: 1s;
+}
